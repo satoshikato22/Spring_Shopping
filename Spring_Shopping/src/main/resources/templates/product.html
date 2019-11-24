@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>search</title>
+</head>
+<body>
+<div th:insert="menu :: fragment"></div>
+<br />
+<p>検索キーワードを入力してください</p>
+<form action="/product" method="post">
+<input type="text" name="name" th:value="${name_value}">
+<input type="submit" value="検索">
+</form>
+
+<p th:text="${id}" />
+<p th:text="${name}" />
+<p th:text="${price}" />
+
+
+</body>
+</html>
