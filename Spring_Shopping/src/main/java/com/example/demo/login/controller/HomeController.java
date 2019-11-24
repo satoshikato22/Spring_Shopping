@@ -149,9 +149,9 @@ public class HomeController {
                 model.addAttribute("result", "更新失敗");
             }
 
-        } catch (DataAccessException e) {
+        } catch(DataAccessException e) {
 
-            model.addAttribute("result", "更新失敗(トランザクションテスト)");
+            model.addAttribute("result", "更新失敗");
 
         }
 
